@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="src/icon.ico">
+	<title>PlantShop</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+	<div class="frontpage">
+		<nav>	
+			<div class="brnd2">
+				<div class="brnd">
+					<img src="src/icon.png" class="mini-icon">
+					<h2 class="brand">Plant</h2><h2 class="brand2">shop</h2><h2 class="brand">.</h2>
+				</div>
+				<ul class="links">
+					<li class="a"><a onclick="menu()">About</a></li>
+					<li class="c"><a onclick="menu()">Plants</a></li>
+					<li class="c"><a onclick="menu()">Review</a></li>
+					<li class="l"><a onclick="menu()">Contacts</a></li>
+				</ul>
+				<input type="checkbox" id="menu" >
+				<label for="menu" class="menu" onclick="menu()"></label>	
+			</div>	
+		</nav>
+
+		
+		<div class="back">
+			<img class="brandbig" src="src/brand.png">
+			<h3 class="tagline">Rebuilding the Beauty of the Earth, Let's Start from your Garden</h3>
+		</div>
+		<a class="enter" href="#footx">Visit Now</a>
+	
+	</div>
+
+	<picture class="soil"></picture>
+
+	<div class="foot" id="footx">
+		<div class="note n">
+			<p class="noteh2">A landing page webpage design for PlantShop.com </p>
+			<p class="noteh3">If you want to be update about this website you'll have to subscribe.</p>
+		</div>
+		<div class="note">
+			<button class="subs btn" onclick="showModal()">Subscribe</button>
+			<button class="cont btn" onclick="showModal()">Contact</button>
+		</div>
+	</div>
+	
+
+
+
+	<div class="modal">
+		<form action="" class="fillup">
+			<div class="tabs">
+				<input type="button" value="Subscribe" class="tab subsbtn tab-active">
+				<input type="button" value="Contact" class="tab contbtn ">
+			</div>
+		
+			<div class="subscribe-form">
+				<div class="info">
+					<p class="subsnote">If you want to be updated about this website you'll have to subscribe.</p>
+				</div>
+				<label for="">Enter your Email</label>
+				<input type="email" name="" id="textb">
+				<button class="tab-btn" onclick="hideModal()">Subscribe</button>
+			</div>
+			
+			<div class="contact-form">
+				<p class="subsnote">Leave a message here</p>
+				<label for="">Enter your Email</label>
+				<input type="email" name="" id="textb">
+				<label for="">Message here...</label>
+				<textarea id="tarea">
+				</textarea>
+				<button class="tab-btn" onclick="hideModal()">Submit</button>
+			</div>
+			<button class="exit" onclick="hideModal()">&times;</button>
+		</form>
+		
+	</div>
+
+
+
+
+</body>
+</html>
+<script src="script.js"></script>
