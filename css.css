@@ -395,6 +395,7 @@ label{
     }
     .note{
         gap: 3px;
+	width: 100%;
     }
     .noteh2{
         font-size: 13px;
